@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #260E12;
+}
+
+@font-face{
+    font-family: "Spectral_SC";
+    src: url(Spectral_SC/SpectralSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: "caviar-dreams";
+    src: url(caviar-dreams-font/CaviarDreams-Wr2O.ttf);
+}
+
+
+body{
+    text-align: center;
+}
+
+h1{
+    padding: 20px;
+    font-family: "Spectral_SC";
+}
+
+p{
+    padding: 10px;
+    font-family: "caviar-dreams";
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image2 , #image3{
+    display: none;
+    
+}
+
+.disc{
+    margin-top: 20px;
+    background-color: bisque;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.disc:nth-last-of-type(3){
+    background-color: #260E12;
+}
+article p{
+    width: 500px;
+    padding: 10px;
+    text-align: justify;
+}
+#imageChampagne{
+    width: 200px;
+}
+
+.image1{
+    width: 100%;
+    height: 300px;
+    text-align: none;
+}
+
+#flecheGauche{
+    height : 0;
+    width : 0;
+    border-top : 87px solid transparent;
+    border-right : 150px solid #260E12;
+    border-bottom : 63px solid transparent;
+    position: absolute;
+    top: 25%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#flecheDroite{
+    height : 0;
+    width : 0;
+    position: absolute;
+    top: 25%;
+    right:0;
+    border-top : 63px solid transparent;
+    border-bottom : 87px solid transparent;
+    border-left : 150px solid #260E12;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+#carousel1{
+    position: relative;
+}
+
+article section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
