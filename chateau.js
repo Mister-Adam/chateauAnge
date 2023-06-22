@@ -33,47 +33,51 @@ discCrousel3.addEventListener("click", function(){
 let flecheGauche = document.getElementById("flecheGauche");
 let flecheDroite = document.getElementById("flecheDroite");
 
-if(imgCrousel1){
-    flecheGauche.addEventListener("click", function(){
-        imgCrousel3.style.display = "inline-block";
-        imgCrousel1.style.display = "none";
-        imgCrousel2.style.display = "none";
-    });
-};
-if(imgCrousel3){
-    flecheGauche.addEventListener("click", function(){
-        imgCrousel2.style.display = "inline-block";
-        imgCrousel1.style.display = "none";
-        imgCrousel3.style.display = "none";
-    });
-};
-if(imgCrousel2){
-    flecheGauche.addEventListener("click",function(){
-        imgCrousel1.style.display = "inline-block";
-        imgCrousel2.style.display = "none";
-        imgCrousel3.style.display = "none";
-    });
-};
+function Carousel(){
+    if(imgCrousel1){
+        flecheGauche.addEventListener("click", function(){
+            imgCrousel3.style.display = "inline-block";
+            imgCrousel1.style.display = "none";
+            imgCrousel2.style.display = "none";
+        });
+    };
+    if(imgCrousel1){
+        flecheDroite.addEventListener("click", function(){
+            imgCrousel2.style.display = "inline-block";
+            imgCrousel1.style.display = "none";
+            imgCrousel3.style.display = "none";
+        });
+    };
+    if(imgCrousel2){
+        flecheGauche.addEventListener("click",function(){
+            imgCrousel1.style.display = "inline-block";
+            imgCrousel2.style.display = "none";
+            imgCrousel3.style.display = "none";
+        });
+    };
+    if(imgCrousel2){
+        flecheDroite.addEventListener("click", function(){
+            imgCrousel3.style.display = "inline-block";
+            imgCrousel1.style.display = "none";
+            imgCrousel2.style.display = "none";
+        });
+    };
+    if(imgCrousel3){
+        flecheGauche.addEventListener("click", function(){
+            imgCrousel2.style.display = "inline-block";
+            imgCrousel1.style.display = "none";
+            imgCrousel3.style.display = "none";
+        });
+    };
+    if(imgCrousel3){
+        flecheDroite.addEventListener("click", function(){
+            imgCrousel1.style.display = "inline-block";
+            imgCrousel2.style.display = "none";
+            imgCrousel3.style.display = "none";
+        });
+    };
 
-if(imgCrousel1){
-    flecheDroite.addEventListener("click", function(){
-        imgCrousel2.style.display = "inline-block";
-        imgCrousel1.style.display = "none";
-        imgCrousel3.style.display = "none";
-    });
-};
-if(imgCrousel2){
-    flecheDroite.addEventListener("click", function(){
-        imgCrousel3.style.display = "inline-block";
-        imgCrousel1.style.display = "none";
-        imgCrousel2.style.display = "none";
-    });
-};
+}
 
-if(imgCrousel3){
-    flecheDroite.addEventListener("click", function(){
-        imgCrousel1.style.display = "inline-block";
-        imgCrousel2.style.display = "none";
-        imgCrousel3.style.display = "none";
-    });
-};
+
+Carousel();
