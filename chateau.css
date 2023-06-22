@@ -54,7 +54,7 @@ article{
 }
 
 .disc:nth-last-of-type(3){
-   background-color: #260E12;
+    background-color: #260E12;
 }
 article p{
     width: 500px;
