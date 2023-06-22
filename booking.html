@@ -15,62 +15,58 @@
     
     
     <form action="">
-
         <fieldset>
-
             <div>
-                <label for="surname">Prénom: </label>
-                <input type="text" id="surname"  placeholder="Ex: Jacques" minlength="3" maxlength="20" required>
-
-                <label for="name">Nom: </label>
+                <label for="surname">Prénom:</label>
+                <input type="text" id="surname" placeholder="Ex: Jacques" minlength="3" maxlength="20" required>
+    
+                <label for="name">Nom:</label>
                 <input type="text" id="name" minlength="2" maxlength="20" placeholder="Ex: Dubois" required>
-            </div>
-
-
-            <div>
-                <label for="radAnswer">Nombres d'invités: </label>               
-            </div>
-            <div> 
-                <input type="radio" name="radAnswer" checked>5-10 Personnes
-            </div>
-            <div>
-                <input type="radio" name="radAnswer">10-15 Personnes
-            </div>
-            <div>
-                <input type="radio" name="radAnswer" >15-20 Personnes
-            </div>
-            <div>
-                <label for="phone">Numéro: </label>
-                <input type="text" id="phone" placeholder="Ex: 00.11.22.33.44" required>
-            </div>
-            <div>
-                <label for="mail">E-mail: </label>
-                <input  type="text" placeholder="Ex: monMail@FAI.com" required>
-            </div>
-            
-            <div>
-                <label for="date"> Choisissez la date de votre venue</label>
-                <input type="date" id="date" required>
-
-            <!-- How to check if date ok -->
-            </div>
-
-            <div>
-                <label for="request">Requêtes spécifiques: </label>
-                <input type="text" name="request"  placeholder="Ex: Pas de ..." minlength="3" maxlength="20">
-                <!-- More space ? -->
             </div>
     
             <div>
-                <input type="button" value="Envoyer">
-                <input type="button" value="Reset">
+                <p>Nombres d'invités:</p>
+            </div>
+            <div>
+                <input type="radio" name="radAnswer" id="smallGroup" checked>
+                <label for="smallGroup">5-10 Personnes
+            </div>
+            <div>
+                <input type="radio" name="radAnswer" id="mediumGroup" >
+                <label for="mediumGroup">10-15 Personnes
+            </div>
+            <div>
+                <input type="radio" name="radAnswer" id="bigGroup" >
+                <label for="bigGroup">15-20 Personnes
             </div>
 
+             
+            <div>
+                <label for="phone">Numéro:</label>
+                <input type="text" id="phone" placeholder="Ex: 00.11.22.33.44" required>
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" placeholder="Ex: monMail@FAI.com" required>
+            </div>
+    
+            <div>
+                <label for="date">Choisissez la date de votre venue</label>
+                <input type="date" id="date" required>
+            </div>
+    
+            <div>
+                <label for="request">Requêtes spécifiques:</label>
+                <input type="text" id="request" placeholder="Ex: Pas de ..." minlength="3" maxlength="20">
+            </div>
+    
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+            </div>
         </fieldset>
-
-
-
     </form>
+    
 
 
     <footer></footer>

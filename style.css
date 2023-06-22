@@ -15,15 +15,15 @@
 
 
 
-h1{
+h1, input[type="submit"], input[type="button"], input[type="reset"]{
 font-family: 'Spectral_SC', sans-serif;
 }
 
-label{
+label, form p{
     font-family: 'Caviar_bold', sans-serif;
 }
 
-input::placeholder, input[type="text"], div input[type="radio"] text  {
+input::placeholder, input[type="text"]{
     font-family: 'Caviar_light', sans-serif;
 }
 
