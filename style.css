@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Spectral_SC";
+    src: url(./font/Spectral_SC/SpectralSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Caviar_bold";
+    src: url(./font/caviar-dreams-font/CaviarDreamsBold-a5og.ttf);
+}
+
+@font-face {
+    font-family: "Caviar_light";
+    src: url(./font/caviar-dreams-font/CaviarDreams-Wr2O.ttf);
+}
+
+
+
+h1{
+font-family: 'Spectral_SC', sans-serif;
+}
+
+label{
+    font-family: 'Caviar_bold', sans-serif;
+}
+
+input::placeholder, input[type="text"], div input[type="radio"] text  {
+    font-family: 'Caviar_light', sans-serif;
+}
+
+
