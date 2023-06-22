@@ -181,9 +181,10 @@ a:visited {
 }
 
 footer {
+    display: flex;
+    margin-top: 20px;
     grid-column: 1;
     grid-row: 4;
-
 }
 
 header {
