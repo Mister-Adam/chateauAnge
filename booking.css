@@ -14,23 +14,46 @@
 }
 
 h1{
+    font-size: 75px;
     display: flex;
-font-family: 'Spectral_SC', sans-serif;
-color: #260E12;
-justify-content: center;
+    font-family: 'Spectral_SC', sans-serif;
+    color: #260E12;
+    justify-content: center;
 }
 
+
+
 form{
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
+section{
+    display: flex;
+    justify-content: center;    
+}
+
+section div{
+    height:50px;
+    width:50%;
+    border-top: 3px solid #f2D541;   
+    margin :0px;
+
+}
+
+label:not(.radio label) {
+    display:flex;
+}
+
 
 fieldset{
 
     background-color: #f2e3b6;
     border-radius: 10px;
+    width : 25%;
 
 }
+
 
 label, form p{
     font-family: 'Caviar_bold', sans-serif;
@@ -38,16 +61,16 @@ label, form p{
     text-decoration: underline 1px #260E12;
 }
 
-
-label:not(.radio label) {
-    display:flex;
-}
+/* Remove the underline from the properties above */
 .radio label {
     text-decoration: none;
 }
 
 input:not(input[type="submit"],input[type="reset"]), textarea{
 
+    font-family: 'Caviar_light', sans-serif;
+    font-weight: bolder;
+    color: #260E12;  
     padding:5px;
     margin:5px 0;
     border: 0;
@@ -55,29 +78,30 @@ input:not(input[type="submit"],input[type="reset"]), textarea{
     border-radius:10px;
 }
 
-input::placeholder, input[type="text"], input[type="date"],input[type="email"]{
-    font-family: 'Caviar_light', sans-serif;
-    font-weight: bolder;
-    color: #260E12;  
-
-    /* background-color: lightgray; */
-
-}
-
-
 input[type="submit"], input[type="button"], input[type="reset"]{
     font-family: 'Spectral_SC', sans-serif;
     color: #260E12;
     background-color: #f2D541;
     margin: 5px;
-
 }
 
 p{
-    margin-bottom:2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 div{
     margin:2px;
 }
 
+textarea{
+   width: 90%;
+   resize: none;
+}
+
+
+div.radio{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
