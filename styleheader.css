@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "TheiPersonalUse";
+    src: url(font/TheiPersonalUse-2O2BK.otf);
+}
+
+
+
+h1 {
+    font-size: 75px;
+    font-family: TheiPersonalUse;
+    font-weight: lighter;
+    margin: auto;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    font-family: 'Spectral', serif;
+    color: #260E12;
+}
+
+#ange {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 65px;
+    text-decoration: underline 0.5px solid;
+    text-underline-offset: 4px;
+    font-size: larger;
+}
+
+.nav-items {
+    margin : 1em;
+    
+}
+
+a {
+    text-decoration : none;
+    color: black;
+}
+
+a:visited {
+
+    color: none;
+}
+
+#contenu {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+footer {
+    grid-column: 1;
+    grid-row: 4;
+
+}
+
+header {
+
+    background-color: none;
+    color: #260E12;
+}
+
+.logo {
+
+    position: relative;
+}
