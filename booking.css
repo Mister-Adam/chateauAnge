@@ -25,6 +25,13 @@ label, form p{
 
 input::placeholder, input[type="text"]{
     font-family: 'Caviar_light', sans-serif;
+    font-weight: bolder;
 }
 
+
+section{
+    height: 700px;
+    margin-bottom:120px;
+    background-image: url("chateaux_bandeau_01.jpg");
+}
 
