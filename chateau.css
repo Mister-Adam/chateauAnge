@@ -7,12 +7,12 @@
 
 @font-face{
     font-family: "Spectral_SC";
-    src: url(Spectral_SC/SpectralSC-Bold.ttf);
+    src: url(font/Spectral_SC/SpectralSC-Bold.ttf);
 }
 
 @font-face{
     font-family: "caviar-dreams";
-    src: url(caviar-dreams-font/CaviarDreams-Wr2O.ttf);
+    src: url(font/caviar-dreams-font/CaviarDreams-Wr2O.ttf);
 }
 
 
@@ -182,9 +182,10 @@ a:visited {
 
 footer {
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     grid-column: 1;
     grid-row: 4;
+
 }
 
 header {

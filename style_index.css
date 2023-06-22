@@ -1,12 +1,12 @@
 /* **** import ***** */
 @font-face {
     font-family: "Spectral_SC";
-    src: url(.././Spectral_SC/SpectralSC-Regular.ttf);
+    src: url(./font/Spectral_SC/SpectralSC-Regular.ttf);
     
 }
 @font-face{
     font-family:"caviar-dreams";
-    src:url(.././caviar-dreams-font/CaviarDreams-Wr2O.ttf);
+    src:url(./font/caviar-dreams-font/CaviarDreams-Wr2O.ttf);
 }
 
 /***** GENERAL *****/
@@ -17,7 +17,7 @@ body{
 section{
     height: 700px;
     margin-bottom:120px;
-    background-image: url("chateau_06.jpg");
+    background-image: url("./content/Chateau_06.jpg");
     
 }
 section p{
