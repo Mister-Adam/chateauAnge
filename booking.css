@@ -80,9 +80,11 @@ input:not(input[type="submit"],input[type="reset"]), textarea{
 
 input[type="submit"], input[type="button"], input[type="reset"]{
     font-family: 'Spectral_SC', sans-serif;
-    color: #260E12;
-    background-color: #f2D541;
+    color: white;
+    background-color: #260E12;
     margin: 5px;
+    border-radius:8px;
+
 }
 
 p{
