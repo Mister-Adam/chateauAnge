@@ -5,16 +5,29 @@
     color: #260E12;
 }
 
+@font-face{
+    font-family: "Spectral_SC";
+    src: url(Spectral_SC/SpectralSC-Bold.ttf);
+}
+
+@font-face{
+    font-family: "caviar-dreams";
+    src: url(caviar-dreams-font/CaviarDreams-Wr2O.ttf);
+}
+
+
 body{
     text-align: center;
 }
 
 h1{
     padding: 20px;
+    font-family: "Spectral_SC";
 }
 
 p{
     padding: 10px;
+    font-family: "caviar-dreams";
 }
 
 article{
@@ -30,7 +43,7 @@ article{
 
 .disc{
     margin-top: 20px;
-    background-color: #260E12;
+    background-color: bisque;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -41,7 +54,7 @@ article{
 }
 
 .disc:nth-last-of-type(3){
-    margin: 0;
+   background-color: #260E12;
 }
 article p{
     width: 500px;
@@ -85,4 +98,10 @@ article p{
 
 #carousel1{
     position: relative;
+}
+
+article section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
