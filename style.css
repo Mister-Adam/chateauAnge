@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "TheiPersonalUse";
+    src: url(font/TheiPersonalUse-2O2BK.otf);
+}
+
+
 
 h1 {
-    font-family: "TheiPersonalUse-2O2BK.otf";
+    font-size: 75px;
+    font-family: TheiPersonalUse;
+    font-weight: lighter;
 }
 
 
@@ -31,10 +39,12 @@ ul {
 .nav-list {
     display: flex;
     justify-content: center;
+    padding-inline-start: 0px;
 }
 
 .nav-items {
     margin : 1em;
+    
 }
 
 a {
