@@ -13,25 +13,71 @@
     src: url(./font/caviar-dreams-font/CaviarDreams-Wr2O.ttf);
 }
 
-
-
-h1, input[type="submit"], input[type="button"], input[type="reset"]{
+h1{
+    display: flex;
 font-family: 'Spectral_SC', sans-serif;
+color: #260E12;
+justify-content: center;
+}
+
+form{
+display: flex;
+justify-content: center;
+}
+
+fieldset{
+
+    background-color: #f2e3b6;
+    border-radius: 10px;
+
 }
 
 label, form p{
     font-family: 'Caviar_bold', sans-serif;
+    color: #260E12;
+    text-decoration: underline 1px #260E12;
 }
 
-input::placeholder, input[type="text"]{
+
+label:not(.radio label) {
+    display:flex;
+}
+.radio label {
+    text-decoration: none;
+}
+
+input:not(input[type="submit"],input[type="reset"]), textarea{
+
+    padding:5px;
+    margin:5px 0;
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+}
+
+input::placeholder, input[type="text"], input[type="date"],input[type="email"]{
     font-family: 'Caviar_light', sans-serif;
     font-weight: bolder;
+    color: #260E12;  
+
+    /* background-color: lightgray; */
+
 }
 
 
-section{
-    height: 700px;
-    margin-bottom:120px;
-    background-image: url("chateaux_bandeau_01.jpg");
+input[type="submit"], input[type="button"], input[type="reset"]{
+    font-family: 'Spectral_SC', sans-serif;
+    color: #260E12;
+    background-color: #f2D541;
+    margin: 5px;
+
+}
+
+p{
+    margin-bottom:2px;
+}
+
+div{
+    margin:2px;
 }
 

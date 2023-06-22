@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
     <title>Booking</title>
 </head>
 <body>
@@ -12,8 +12,7 @@
     <header></header>
 
     <h1>Réserver le Château Ange</h1>
-    
-    
+        
     <form action="">
         <fieldset>
             <div>
@@ -24,22 +23,22 @@
                 <input type="text" id="name" minlength="2" maxlength="20" placeholder="Ex: Dubois" required>
             </div>
     
-            <div>
+            <div class = "radio">
                 <p>Nombres d'invités:</p>
+            
+                <div>
+                    <input type="radio" name="radAnswer" id="smallGroup" checked>
+                    <label for="smallGroup">5-10 Personnes
+                </div>
+                <div>
+                    <input type="radio" name="radAnswer" id="mediumGroup" >
+                    <label for="mediumGroup">10-15 Personnes
+                </div>
+                <div>
+                    <input type="radio" name="radAnswer" id="bigGroup" >
+                    <label for="bigGroup">15-20 Personnes
+                </div>
             </div>
-            <div>
-                <input type="radio" name="radAnswer" id="smallGroup" checked>
-                <label for="smallGroup">5-10 Personnes
-            </div>
-            <div>
-                <input type="radio" name="radAnswer" id="mediumGroup" >
-                <label for="mediumGroup">10-15 Personnes
-            </div>
-            <div>
-                <input type="radio" name="radAnswer" id="bigGroup" >
-                <label for="bigGroup">15-20 Personnes
-            </div>
-
              
             <div>
                 <label for="phone">Numéro:</label>
@@ -57,7 +56,7 @@
     
             <div>
                 <label for="request">Requêtes spécifiques:</label>
-                <input type="text" id="request" placeholder="Ex: Pas de ..." minlength="3" maxlength="20">
+                <textarea id="request" placeholder="Ex: Pas de ..." rows="5" cols="33"></textarea>
             </div>
     
             <div>
